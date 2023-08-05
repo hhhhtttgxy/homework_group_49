@@ -142,7 +142,7 @@ cout << "用时：" << duration.count() << " 微秒" << endl;
 
 > linux下优化版本的运行效率：
 >
-> ![2c58550d935bb7079db5ea3342282fdc](./image/b8d2060d-b8ea-4ced-a045-7dea13d106e8.png)
+> ![2c58550d935bb7079db5ea3342282fdc](./image/b8d2060d-b8ea-4ced-a045-7dea13d106e8.jpg)
 
 - 效率对比表：
 
