@@ -12,13 +12,13 @@ http://www.sca.gov.cn/sca/xwdt/2010-12/17/1002389/files/302a3ada057c4a73830536d0
 ### 1.2 生日攻击
 - 生日问题：当老师问一个有30名学生的班级（n = 30）每个人的生日在哪一天（为简便，此处省略闰年）以确定是否有两个学生同一天生日（对应碰撞）。从直觉角度考虑，几率看起来很小，但是实际上是和直觉相反的。
 
-![image](./image/1.png)
+![image](./image/aef797f0-72ef-49e4-98c5-a6a7c37ac36c)
 
 - 定理：设杂凑函数h的输出值长n比特，则经过约 $2^{n/2}$ 次杂凑运算，找到一对碰撞(x,x')的概率大于1/2。
 
 （运用该定理实现攻击）
 
-![image](./image/2.png)
+![image](./image/37763c06-3ca3-47c4-924d-2ad8fce28f49)
 
 ## 2. 实现过程
 ### 2.1 sm3算法的使用
@@ -74,13 +74,13 @@ def birthday_attack(str_length,collision_length):
 ### 2.3 实现结果
 在最后调用生日攻击函数时，使用time模块测量攻击时间，如果出现了未找到的情况，再次运行该代码直到打印出找碰撞为止。
 
-> ![image](./image/3.png)
+> ![image](./image/60a515d3-cb85-4b44-8fa2-8e6ceb16d444)
 >
-> ![image](./image/4.png)
+> ![image](./image/41935e9c-faad-4b7f-88f7-aad2671c04f9)
 >
-> ![image](./image/5.png)
+> ![image](./image/68e94b70-4450-43b4-99c3-16c8e779dfa2)
 >
-> ![image](./image/6.png)
+> ![image](./image/f1a356a7-ad73-41c0-b2c4-77545e348130)
 
 - 结果整合（单位：秒）
 
@@ -88,7 +88,7 @@ def birthday_attack(str_length,collision_length):
 | -------- | ------ | ------ | ------- | -------- |
 | 用时     | 0.1451 | 1.0224 | 17.0731 | 167.5820 |
 
-![image](./image/7.png)
+![image](./image/dce56668-fa82-4869-8247-c865846df89d)
 
 随着碰撞比特位数增加，时间呈指数级增加。
 
@@ -99,13 +99,13 @@ def birthday_attack(str_length,collision_length):
 
 - 结果
 
-> ![image](./image/8.png)
+> ![image](./image/1b671ec1-2da5-4131-9152-dbd1207d8215)
 > 
-> ![image](./image/9.png)
+> ![image](./image/bbe1ceff-31f1-4f7a-a095-eae8808cb282)
 >
-> ![image](./image/10.png)
+> ![image](./image/c46d8bf5-a487-41a9-9393-d054c4e60f10)
 > 
-> ![image](./image/11.png)
+> ![image](./image/65801757-9017-4057-8555-3d2f26de126a)
 
 - 结果整合（单位：秒）
 
@@ -113,7 +113,7 @@ def birthday_attack(str_length,collision_length):
 | -------- | ------ | ------ | ------ | -------- |
 | 用时     | 0.0624 | 0.7097 | 9.2725 | 141.9138 |
 
-![image](./image/12.png)
+![image](./image/4eb95f3e-cbd2-47d5-a358-fd0803a554a6)
 
 趋势仍为随着碰撞比特位数增加，时间呈指数级增加，但该实现效率比调用gmssl库更高，本质上是因为自编写的sm3算法效率更高。
 
