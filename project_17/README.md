@@ -141,7 +141,7 @@ Firefox 可以通过使用主密码加密来保护敏感信息，例如保存的
 
 使用参考文献[6]中的代码完成解密密码（结果如下）。
 
-![a9aa75a03831f41e237911ba5aecfb6](./image/6b59d0c2-81c4-40aa-af7f-6f19f3e5ef09.png)
+![a9aa75a03831f41e237911ba5aecfb6](./image/6b59d0c2-81c4-40aa-af7f-6f19f3e5ef09.jpg)
 
 
 ### 谷歌
