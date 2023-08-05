@@ -11,8 +11,7 @@
 ## 1. 实现原理
 这种方法减少了存储，其主要原理是每次都对最后一个值进行哈希，一直重复操作，最终会进入哈希值的循环（这也是该方法的好处），则找到碰撞。
 
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/98cca7ce-51a0-4961-951a-af60884b2f7d)
-
+![image](./image/3f9136ed-c3cd-43e6-b876-e73b4e586207.png)
 
 该图中 $H_4$ 和 $H_{10}$ 的哈希值均为 $H_5$ ，因此 $H_4$ 和 $H_{10}$ 是一个碰撞。
 
@@ -53,8 +52,7 @@ def rho_attack(initial_str,collision_length):
 ```
 - 结果
   
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/19ab22e5-9ff8-44ea-b501-4d9a78602dec)
-
+![image](./image/cc7d9a69-3512-43ad-acab-f6a266d0493c.png)
 
 
 ### 2.2 方法二
@@ -76,8 +74,7 @@ def rho_attack(initial_str,collision_length):
 ```
 - 结果
   
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/cb32459d-a9c2-4100-a9bd-de9589d13757)
-
+![image](./image/a42ebd8f-ece4-4770-bf42-1ace50f0f04f.png)
 
 
 ## 3. 结果分析（单位：秒）
@@ -87,8 +84,7 @@ def rho_attack(initial_str,collision_length):
 | 方法一   | 0.2578 | 2.3415 | 51.3260 |
 | 方法二   | 0.2826 | 3.2818 | 46.7776 |
 
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/65779cc9-399b-4b0d-bb8e-7abace61e03f)
-
+![image](./image/153a4bac-e3aa-4d31-8148-0ec7ce78af84.png)
 
 
 Rho攻击方法普遍比生日攻击所用时间长，该方法的法一与法二速度相近。
@@ -97,10 +93,13 @@ Rho攻击方法普遍比生日攻击所用时间长，该方法的法一与法�
 由于后续实现了自己编写的sm3算法的python版本，因此补充调用自己实现的sm3算法进行攻击（只需改为调用自编写的sm3算法即可，其它攻击部分无需改动）。
 
 - 结果
-  
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/6350cf2f-c395-4cf7-a927-1fd7948a4a07)
-
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/dc739bab-8283-4711-9583-66953ee6dd94)
+> 方法一
+> 
+> ![image](./image/ff6ec984-f0f8-4a80-8277-b2b5fe5886eb.png)
+>
+> 方法二
+>
+> ![image](./image/2f5ede67-3c68-4422-8bf4-1c77314a41c8.png)
 
 - 结果整合（单位：秒）
 
@@ -109,6 +108,6 @@ Rho攻击方法普遍比生日攻击所用时间长，该方法的法一与法�
 | 方法一   | 0.1666 | 1.6869 | 43.7177 |
 | 方法二   | 0.2517 | 2.4801 | 34.7840 |
 
-![image](https://github.com/hhhhtttgxy/homework_readme/assets/132645676/6d09696d-1086-4396-a6a1-df98cfec1c9d)
+![image](./image/2b5fc895-b9de-460b-8a2e-10216ebce8f5.png)
 
 Rho攻击方法普遍比生日攻击所用时间长，该方法的法一与法二速度相近，但该实现效率比调用gmssl库更高，本质上是因为自编写的sm3算法效率更高。
