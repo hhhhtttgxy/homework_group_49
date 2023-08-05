@@ -8,7 +8,7 @@
 |  project_3_sm3.py   |  完成sm3算法的长度扩展攻击   |
 | project_3_sha256.py | 完成sha256算法的长度扩展攻击 |
 
-为了解sm3算法和sha256算法的细节并且实现长度扩展攻击，首先分别实现了python版本的[sm3算法](https://github.com/hhhhtttgxy/homework_group_49/edit/main/project_3/sm3.py)和[sha256算法](https://github.com/hhhhtttgxy/homework_group_49/edit/main/project_3/sha256.py)（分别见 [sm3.md](https://github.com/hhhhtttgxy/homework_group_49/edit/main/project_3/sm3.md) [sha256.md](https://github.com/hhhhtttgxy/homework_group_49/edit/main/project_3/sha256.md)）。
+为了解sm3算法和sha256算法的细节并且实现长度扩展攻击，首先分别实现了python版本的sm3算法和sha256算法（分别见sm3.md和sha256.md）。
 
 > 注：这里对SM3和SHA256进行了长度扩展攻击，其它MD结构的哈希算法类似。
 
