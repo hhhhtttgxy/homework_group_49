@@ -1,7 +1,7 @@
 # 比较Firefox和谷歌的记住密码插件的实现区别
 # PoC impl of the scheme, or do implement analysis by Google
 首先对Google Password Checkup进行了实现，然后比较了Firefox和谷歌的记住密码插件的实现区别，并使用找到的开源代码对Firefox和谷歌的密码进行解密。
-![image](./image/76da9185-5803-4d2f-b4be-38c450f004f11.png)
+
 - Google Password Checkup
 
 |     代码名称     |    具体实现    |
