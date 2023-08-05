@@ -33,7 +33,7 @@
 
 ### Linux下
 
-![5b17f2081185a70385c26b0396915e32](./image/ace69311-7013-40c1-a0e2-80614a44d181.png)
+![5b17f2081185a70385c26b0396915e32](./image/ace69311-7013-40c1-a0e2-80614a44d181.jpg)
 
 
 ## 运行指导
@@ -247,7 +247,7 @@ For comparison, the aes_scalar benchmark executed on an Intel Core i5 CPU took 2
 
 - 在Linux下运行aes_scalar.cpp的结果：
 
-![9ad62328e9c36c12cd5b390bdadf93b2](./image/d27721f6-105c-4db0-a451-5ea81a2267d5.png)
+![9ad62328e9c36c12cd5b390bdadf93b2](./image/d27721f6-105c-4db0-a451-5ea81a2267d5.jpg)
 
 最后又附上了一个非常具体的ARM中NEON相关的使用方法介绍的链接。
 
@@ -453,7 +453,7 @@ Firefox 可以通过使用主密码加密来保护敏感信息，例如保存的
 
 Firefox:
 
-![a9aa75a03831f41e237911ba5aecfb6](./image/6b59d0c2-81c4-40aa-af7f-6f19f3e5ef09.png)
+![a9aa75a03831f41e237911ba5aecfb6](./image/6b59d0c2-81c4-40aa-af7f-6f19f3e5ef09.jpg)
 
 谷歌：
 
